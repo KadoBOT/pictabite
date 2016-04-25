@@ -3,8 +3,8 @@
 git clone https://github.com/KadoBOT/pictabite.git
 cd pictabite
 npm install
-replace files from node_modules/aphrodite/ with these files found here(https://github.com/Khan/aphrodite)
 ```
+Replace files from ``node_modules/aphrodite/`` with these files found here(https://github.com/Khan/aphrodite)
 
 Development Mode:
 ```
