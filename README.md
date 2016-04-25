@@ -1,3 +1,10 @@
+
+```
+git clone https://github.com/KadoBOT/pictabite.git
+cd pictabite
+npm install
+```
+
 Development Mode:
 ```
 npm start
