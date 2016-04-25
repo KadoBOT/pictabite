@@ -16,7 +16,7 @@ render(
     component={App}
     props={{ store }}
   />,
-  document.getElementById('root')
+document.querySelector('.container')
 );
 
 if (module.hot) {
@@ -26,7 +26,7 @@ if (module.hot) {
         component={require('./components/App/App').default}
         props={{ store }}
       />,
-      document.getElementById('root')
+    document.querySelector('.container')
     );
   });
 }

@@ -1,23 +1,48 @@
-import { StyleSheet } from 'aphrodite';
+import { StyleSheet } from '../../../node_modules/aphrodite/dist/aphrodite.js';
+
+const keyframes = {
+    'from': {
+        height: 0
+    },
+    'to': {
+        height: 276
+    }
+};
+
+const keyframes1 = {
+    'from': {
+        height: 276
+    },
+    'to': {
+        height: 0
+    }
+};
 
 export const styles = StyleSheet.create({
-    red: {
-        backgroundColor: 'red'
+    container: {
+        backgroundColor: 'transparent',
+        border: '1px solid #C5C5C5',
+        padding: 0,
+        borderRadius: '10px',
+        overflow: 'hidden'
     },
-
-    blue: {
-        backgroundColor: 'blue'
+    menu: {
+      WebkitBoxShadow: '0px 2px 1px 0px rgba(0,0,0,0.48)',
+      MozBoxShadow: '0px 2px 1px 0px rgba(0,0,0,0.48)',
+      boxShadow: '0px 2px 1px 0px rgba(0,0,0,0.48)',
+      position: 'relative',
+      zIndex: 1,
+      overflow: 'hidden'
     },
-
-    hover: {
-        ':hover': {
-            backgroundColor: 'red'
-        }
+    menuOn: {
+        animationName: keyframes,
+        animationDuration: '1s',
+        animationIterationCount: '1'
     },
-
-    small: {
-        '@media (max-width: 600px)': {
-            backgroundColor: 'red'
-        }
+    menuOff: {
+        animationName: keyframes1,
+        animationDuration: '0.5s',
+        animationIterationCount: '1',
+        animationFillMode: 'forwards'
     }
 });
