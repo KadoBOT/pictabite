@@ -1,4 +1,4 @@
-import { StyleSheet } from '../../../node_modules/aphrodite/dist/aphrodite.js';
+import { StyleSheet } from 'aphrodite';
 
 export const styles = StyleSheet.create({
   icon: {

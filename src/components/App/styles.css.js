@@ -1,4 +1,4 @@
-import { StyleSheet } from '../../../node_modules/aphrodite/dist/aphrodite.js';
+import { StyleSheet } from 'aphrodite';
 
 const keyframes = {
     'from': {
@@ -35,14 +35,16 @@ export const styles = StyleSheet.create({
       overflow: 'hidden'
     },
     menuOn: {
-        animationName: keyframes,
-        animationDuration: '1s',
-        animationIterationCount: '1'
+      height: '100%',
+      animationName: keyframes,
+      animationDuration: '1s',
+      animationIterationCount: '1'
     },
     menuOff: {
-        animationName: keyframes1,
-        animationDuration: '0.5s',
-        animationIterationCount: '1',
-        animationFillMode: 'forwards'
+      height: 0,
+      animationName: keyframes1,
+      animationDuration: '0.5s',
+      animationIterationCount: '1',
+      animationFillMode: 'forwards'
     }
 });

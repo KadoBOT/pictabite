@@ -6,7 +6,7 @@ import Menubar from '../Menubar/Menubar';
 import Items from '../Items/Items';
 import Menu from '../Menu/Menu'
 import Buttons from '../Buttons/Buttons'
-import { css } from '../../../node_modules/aphrodite/dist/aphrodite.js';
+import { css } from 'aphrodite';
 import {styles} from './styles.css';
 
 @observer

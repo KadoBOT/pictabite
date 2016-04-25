@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import { css } from '../../../node_modules/aphrodite/dist/aphrodite.js';
+import { css } from 'aphrodite';
 import { observer } from 'mobx-react';
 import {styles} from './styles.css';
 import FontIcon from 'react-toolbox/lib/font_icon';
