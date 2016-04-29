@@ -1,7 +1,28 @@
 import { StyleSheet } from 'aphrodite';
 
+const keyframes = {
+    'from': {
+        backgroundColor: '#E6E6E6'
+    },
+    'to': {
+        backgroundColor: 'white'
+    }
+};
+
+const keyframes1 = {
+    'from': {
+        backgroundColor: 'white'
+    },
+    'to': {
+        backgroundColor: '#E6E6E6'
+    }
+};
+
 export const styles = StyleSheet.create({
   item: {
+      animationName: keyframes,
+      animationDuration: '0.5s',
+      animationIterationCount: '1',
       padding: 20,
       borderBottom: '1px solid #E6E6E6',
       fontWeight: '600',
@@ -19,6 +40,9 @@ export const styles = StyleSheet.create({
       backgroundColor: 'transparent'
   },
   disabled: {
+    animationName: keyframes1,
+    animationDuration: '0.5s',
+    animationIterationCount: '1',
     backgroundColor: '#E6E6E6',
     color: '#BFBFBF',
     borderBottom: '1px solid #CCC'

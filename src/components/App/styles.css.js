@@ -5,13 +5,13 @@ const keyframes = {
         height: 0
     },
     'to': {
-        height: 276
+        height: 340
     }
 };
 
 const keyframes1 = {
     'from': {
-        height: 276
+        height: 340
     },
     'to': {
         height: 0
@@ -35,13 +35,11 @@ export const styles = StyleSheet.create({
       overflow: 'hidden'
     },
     menuOn: {
-      height: '100%',
       animationName: keyframes,
       animationDuration: '1s',
       animationIterationCount: '1'
     },
     menuOff: {
-      height: 0,
       animationName: keyframes1,
       animationDuration: '0.5s',
       animationIterationCount: '1',
