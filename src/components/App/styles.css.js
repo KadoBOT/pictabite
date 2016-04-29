@@ -1,20 +1,23 @@
 import { StyleSheet } from 'aphrodite';
 
 const keyframes = {
-    'from': {
-        height: 0
+    '0%': {
+        transform: 'translateY(-500px)',
     },
-    'to': {
-        height: 340
+    '100%': {
+        transform: 'translateY(0px)',
+        display: 'list-item'
     }
 };
 
 const keyframes1 = {
-    'from': {
-        height: 340
+    '0%': {
+        transform: 'translateY(0px)',
+        display: 'list-item'
     },
-    'to': {
-        height: 0
+    '100%': {
+        transform: 'translateY(-500px)',
+        display: 'none'
     }
 };
 
@@ -35,14 +38,25 @@ export const styles = StyleSheet.create({
       overflow: 'hidden'
     },
     menuOn: {
-      animationName: keyframes,
-      animationDuration: '1s',
-      animationIterationCount: '1'
+      transform: 'translateY(0px)',
+      height: 345,
+      // WebkitAnimation: 'x 2s 1',
+      // MozAnimation: 'x 2s 1',
+      // OAnimation: 'x 2s 1',
+      // animation: 'x 2s 1',
+      // animationName: keyframes,
+      WebkitTransition: 'all 1s linear', /* For Safari 3.1 to 6.0 */
+      transition: 'all 1s linear'
     },
     menuOff: {
-      animationName: keyframes1,
-      animationDuration: '0.5s',
-      animationIterationCount: '1',
-      animationFillMode: 'forwards'
+      height: 0,
+      transform: 'translateY(-500px)',
+      WebkitTransition: 'all 0.5s linear', /* For Safari 3.1 to 6.0 */
+      transition: 'all 0.5s linear'
+      // WebkitAnimation: 'x 1s 1 forwards',
+      // MozAnimation: 'x 1s 1 forwards',
+      // OAnimation: 'x 1s 1 forwards',
+      // animation: 'x 1s 1 forwards',
+      // animationName: keyframes1
     }
 });
